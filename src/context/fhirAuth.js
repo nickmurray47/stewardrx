@@ -4,27 +4,6 @@ import fhir from "fhir.js";
 import { FHIR_CLIENT_ID, FHIR_REDIRECT_URI } from "../credentials.js";
 import hdOAuth from "./oauth.js";
 
-// const authReducer = (state, action) => {
-//     switch (action.type) {
-//         case 'add_error':
-//             return { ...state, errorMessage: action.payload };
-//         case 'authenticate':
-//             // if a user tries to signup, then we zero our state (build it from scratch)
-//             return { errorMessage: '', token: action.payload, isLoading: false };
-//         case 'clear_error_message':
-//             // if a user tries to signup, then we zero our state (build it from scratch)
-//             return { ...state, errorMessage: '' };
-//         case 'navigate_signin':
-//             // if a user tries to signup, then we zero our state (build it from scratch)
-//             return { ...state, isLoading: false };
-//         case 'signout':
-//             // if a user tries to signup, then we zero our state (build it from scratch)
-//             return { token: null, errorMessage: '' };
-//         default:
-//             return state;
-//     }
-// };
-
 /***** Actions *****/
 const FHIR_SMART_INITIALIZE = "FHIR/SMART_INITIALIZE";
 
