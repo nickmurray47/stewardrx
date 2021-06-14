@@ -5,6 +5,10 @@
 4. `npm start` to run locally (this will not involve the Auth loop but will just show sample app)
 5. Launch from [Epic App Orchard Simulator](https://open.epic.com/Launchpad/OAuth2Sso). The launch URL will be https://YOUR_HOST_NAME/fhir/epic/launch
 
+## To-Do
+- After authentication, trigger sample data grab in Redirect
+- 
+
 ## How app flow works
 1. If not authenticated, then 
 2. 
