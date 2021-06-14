@@ -1,4 +1,4 @@
-## Running the app from Epic App Orchard
+# Running the app from Epic App Orchard
 1. Clone the repo
 2. Install dependencies: npm install
 3. Add your app credentials to credentials.js -> `clientID` and the `redirectURI` e.g. `https://steward-rx.herokuapp.com/fhir/epic/redirect` that gets
@@ -7,15 +7,17 @@
 
 ## To-Do
 - After authentication, trigger sample data grab in Redirect
-- 
+
+## Heroku Deploy
+1. `git push heroku main` to trigger redeploy
+
 
 ## How app flow works
 1. If not authenticated, then 
-2. 
 
 
 
-# Getting Started with Create React App
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
