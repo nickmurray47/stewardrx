@@ -1,3 +1,16 @@
+## Running the app from Epic App Orchard
+1. Clone the repo
+2. Install dependencies: npm install
+3. Add your app credentials to credentials.js -> `clientID` and the `redirectURI` e.g. `https://steward-rx.herokuapp.com/fhir/epic/redirect` that gets
+4. `npm start` to run locally (this will not involve the Auth loop but will just show sample app)
+5. Launch from [Epic App Orchard Simulator](https://open.epic.com/Launchpad/OAuth2Sso). The launch URL will be https://YOUR_HOST_NAME/fhir/epic/launch
+
+## How app flow works
+1. If not authenticated, then 
+2. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
