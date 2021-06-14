@@ -4,11 +4,6 @@ import fhir from "fhir.js";
 import { FHIR_CLIENT_ID, FHIR_REDIRECT_URI } from "../credentials.js";
 import hdOAuth from "./oauth.js";
 
-// import AsyncStorage from "@react-native-community/async-storage";
-// import trackerApi from "../api/tracker";
-// import * as RootNavigation from '../../RootNavigation.js';
-// import * as SecureStore from 'expo-secure-store';
-
 // const authReducer = (state, action) => {
 //     switch (action.type) {
 //         case 'add_error':
@@ -223,7 +218,7 @@ const getAccessToken = uri => (dispatch, getState) => {
 };
 
 const initializeSmart = dispatch => (iss, launch) => {
-    console.log("here");
+    console.log("here in initializeSmart");
     console.log(iss);
     dispatch({ type: FHIR_SMART_INITIALIZE, iss, launch });
     dispatch(fhirGetMetadata(iss));
@@ -270,6 +265,7 @@ const fhirGetMetadataSucceeded = (authorizeUrl, tokenUrl) => ({
     authorizeUrl,
     tokenUrl
 });
+
 const fhirGetMetadataFailed = error => ({
     type: FHIR_GET_METADATA_FAILED,
     error
